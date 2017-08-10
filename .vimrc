@@ -48,6 +48,14 @@ set foldmethod=indent
 " visual move
 nnoremap j gj
 nnoremap k gk
+" Buffers
+set hidden
+nmap <leader>t :badd
+nmap <leader>T :enew<cr>
+nmap <leader>n :bnext<CR>
+nmap <leader>p :bprevious<CR>
+nmap <leader>bq :bp <BAR> bd #<CR>
+nmap <leader>l :ls<CR>
 " status line
 set laststatus=2
 set statusline+=%7*\[%n]                                  "buffernr
@@ -107,4 +115,5 @@ augroup phpSyntaxOverride
   autocmd!
   autocmd FileType php call PhpSyntaxOverride()
 augroup END
+
 
