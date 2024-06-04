@@ -1,8 +1,3 @@
-
--- (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
-
--- @lint-ignore-every LUA_LUAJIT
-
 local fn = vim.fn
 
 -- Bootstrap Lazy.nvim for migration
@@ -20,7 +15,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 return require("lazy").setup({
-  "neovim/nvim-lspconfig",  
+  "neovim/nvim-lspconfig",
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
@@ -109,8 +104,6 @@ return require("lazy").setup({
     "saadparwaiz1/cmp_luasnip",
     dependencies = { "nvim-cmp" },
   },
-  { dir = "/usr/share/fb-editor-support/nvim", name = "meta.nvim", lazy = false },
-  { dir = "/usr/local/share/myc/vim", name = "myc.nvim", lazy = false },
   {'ojroques/nvim-osc52'},
   {"hhvm/vim-hack"},
   {

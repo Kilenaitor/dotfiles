@@ -1,7 +1,3 @@
--- (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
-
--- @lint-ignore-every LUA_LUAJIT
-
 local M = {}
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()

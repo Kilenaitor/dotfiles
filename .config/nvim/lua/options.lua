@@ -1,5 +1,3 @@
--- (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
-
 -- @lint-ignore-every LUA_LUAJIT
 
 local opt = vim.opt
@@ -140,15 +138,6 @@ vim.api.nvim_set_keymap(
   "n",
   "<leader>q",
   ":bp<bar>bd #<CR>",
-  { noremap = true, silent = true}
-)
-
--- Miles
-opt.runtimepath = vim.o.runtimepath..",/usr/local/share/myc/vim"
-vim.api.nvim_set_keymap(
-  "",
-  "<C-P>",
-  ":MYC<CR>",
   { noremap = true, silent = true}
 )
 
